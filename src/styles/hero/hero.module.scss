@@ -1,0 +1,18 @@
+.bg {
+   @apply absolute top-20 left-0 flex justify-between w-full pointer-events-none;
+   & img {
+      @apply h-full -z-10;
+      &:nth-child(1) {
+         @apply lg:hidden;
+      }
+      &:nth-child(2) {
+         @apply hidden lg:block relative top-96;
+      }
+      &:nth-child(3) {
+         @apply h-72 md:h-[300px] lg:h-[600px];
+      }
+   }
+}
+.hero {
+   @apply pt-20 flex flex-col lg:flex-row justify-between;
+}
