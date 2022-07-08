@@ -6,6 +6,8 @@ module.exports = {
          green: '#75E169',
          blue: '#67AEFC',
          ice: '#DAECFF',
+         white: '#FFFFFF',
+         gray: '#484848',
       },
       fontFamily: {
          montserrat: 'Montserrat',
