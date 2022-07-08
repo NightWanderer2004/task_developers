@@ -2,5 +2,5 @@
    @apply min-h-screen overflow-x-hidden;
 }
 .main {
-   @apply px-5 container mx-auto;
+   @apply px-3 sm:px-5 md:px-12 container mx-auto;
 }
