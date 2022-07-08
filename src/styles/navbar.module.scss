@@ -1,0 +1,18 @@
+.navbar {
+   @apply bg-blue;
+   .logo {
+      @apply z-50;
+   }
+   &Content {
+      @apply container mx-auto px-3 py-2 flex justify-between items-center;
+   }
+   &Links {
+      @apply hidden absolute top-0 left-0 z-30 h-[377px] w-full bg-blue flex-col gap-y-11 items-center justify-center;
+      &.active {
+         @apply flex;
+      }
+   }
+   &Link a {
+      @apply block text-white font-extrabold text-lg hover:underline underline-offset-4;
+   }
+}
