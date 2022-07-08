@@ -4,15 +4,15 @@
       @apply z-50;
    }
    &Content {
-      @apply container mx-auto px-3 py-2 flex justify-between items-center;
+      @apply container mx-auto px-3 py-2 lg:py-4 flex justify-between items-center;
    }
    &Links {
-      @apply hidden absolute top-0 left-0 z-30 h-[377px] w-full bg-blue flex-col gap-y-11 items-center justify-center;
+      @apply hidden lg:flex absolute lg:static top-0 left-0 z-30 h-[377px] lg:h-auto w-full lg:w-auto bg-blue lg:bg-opacity-0 flex-col lg:flex-row gap-y-11 lg:gap-x-8 items-center justify-center;
       &.active {
          @apply flex;
       }
    }
    &Link a {
-      @apply block text-white font-extrabold text-lg hover:underline underline-offset-4;
+      @apply block text-white font-extrabold lg:font-semibold text-lg lg:text-base hover:underline underline-offset-4;
    }
 }

@@ -1,5 +1,5 @@
 .burger {
-   @apply relative flex gap-x-1 z-50;
+   @apply relative flex gap-x-1 z-50 lg:hidden;
    & .dot {
       @apply block w-3 h-3 bg-white rounded-full;
    }
