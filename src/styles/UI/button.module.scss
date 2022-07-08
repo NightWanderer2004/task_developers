@@ -1,0 +1,3 @@
+.button {
+   @apply bg-green text-white font-bold rounded-lg py-4 w-full lg:w-[270px] hover:outline outline-blue outline-2 active:bg-blue transition-colors duration-75;
+}
