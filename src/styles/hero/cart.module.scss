@@ -1,15 +1,15 @@
 .cart {
-   @apply absolute z-10 w-full max-w-xs md:max-w-none md:w-96 lg:w-[509px];
+   @apply absolute z-10 w-full max-w-xs md:max-w-none md:w-96 lg:w-[525px];
    &Container {
-      @apply lg:left-10 order-1 md:order-2 relative top-0 left-0 h-[300px] md:h-[380px] lg:h-[490px] w-full;
+      @apply flex justify-center md:justify-end lg:left-10 order-1 md:order-2 relative top-0 left-0 h-[300px] md:h-[380px] lg:h-[490px] w-full;
    }
    animation: cartHover 2.2s ease-in-out infinite alternate, opacity 1s;
 }
 .particles {
-   @apply relative left-1/4;
+   @apply relative right-8 md:right-1/4;
    & img {
       &[data-position="1"] {
-         @apply relative bottom-4 md:bottom-12 lg:bottom-8 left-8 md:-left-8 w-12 md:w-20 lg:w-28;
+         @apply relative  bottom-4 md:bottom-12 lg:bottom-8 left-8 md:-left-8 w-12 md:w-20 lg:w-28;
          animation: upHover 2s ease-in-out infinite alternate, opacity 1s;
       }
       &[data-position="2"] {
@@ -21,7 +21,7 @@
          animation: upHover 2s ease-in-out infinite alternate, opacity 1s;
       }
       &[data-position="4"] {
-         @apply relative top-10 md:top-20 left-56 md:left-80 z-20 w-6 md:w-12 lg:w-14;
+         @apply relative top-10 md:top-20 left-56 md:left-[350px] z-20 w-6 md:w-12 lg:w-14;
          animation: upHover 2s ease-in-out infinite alternate, opacity 1s;
       }
       &[data-position="5"] {
@@ -33,8 +33,8 @@
          animation: downHover 2s ease-in-out infinite alternate, opacity 1s;
       }
       &[data-position="7"] {
-         @apply relative top-24 lg:-top-24 left-48 lg:left-96 z-20 w-6 md:w-8 lg:w-10;
-         animation: upHover 2s ease-in-out infinite alternate, opacity 1s;
+         @apply relative top-24 lg:-top-24 left-48 lg:left-[395px] z-20 w-6 md:w-8;
+         animation: downHover 2s ease-in-out infinite alternate, opacity 1s;
       }
    }
 }

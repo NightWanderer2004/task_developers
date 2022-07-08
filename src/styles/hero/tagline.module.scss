@@ -1,7 +1,7 @@
 .tagline {
    @apply pt-10 order-2 md:order-1;
    .header {
-      @apply font-extrabold text-3xl min-w-max md:text-4xl lg:text-5xl lg:font-black lg:text-gray mb-5;
+      @apply font-extrabold text-3xl min-w-max md:text-4xl lg:text-5xl lg:font-black lg:text-gray lg:leading-[60px] mb-5;
    }
    .infoText {
       @apply mb-9 md:max-w-[300px] lg:max-w-md;
