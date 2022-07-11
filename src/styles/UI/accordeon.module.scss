@@ -1,0 +1,27 @@
+.accordeon {
+   @apply bg-white rounded-lg py-4 px-6 cursor-pointer;
+   .container {
+      @apply flex items-start gap-x-5;
+   }
+   .status {
+      @apply w-4 h-4 rounded-full bg-green self-center transition-colors duration-75;
+      &[data-active="true"] {
+         @apply bg-blue;
+      }
+   }
+   .title {
+      @apply flex-1 cursor-auto;
+   }
+   .arrow {
+      @apply pt-[6px] w-6 transition-transform duration-75;
+      &[data-active="true"] {
+         @apply rotate-180;
+      }
+   }
+   .body {
+      @apply hidden cursor-auto;
+      &[data-active="true"] {
+         @apply block border-l border-black pl-6 mt-5 mb-6 leading-7;
+      }
+   }
+}

@@ -4,7 +4,7 @@ import Button from '../UI/Button'
 const Tagline = () => {
    return (
       <div className={s.tagline}>
-         <h1 className={s.header}>
+         <h1 className={s.title}>
             Разработка <br /> интернет-магазина <br /> с нуля за неделю
          </h1>
          <p className={s.infoText}>
