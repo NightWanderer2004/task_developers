@@ -1,5 +1,8 @@
 .info {
-   @apply bg-ice px-5 py-4 md:py-12 lg:py-24 relative;
+   @apply bg-ice px-5 py-4 md:py-12 lg:py-24;
+   &Container {
+      @apply mx-auto container relative;
+   }
    .title {
       @apply font-extrabold text-2xl lg:text-3xl text-center leading-8;
    }
@@ -7,6 +10,6 @@
       @apply flex flex-col gap-y-2 pt-4 md:pt-10 lg:pt-20;
    }
    .bag {
-      @apply hidden lg:block absolute bottom-8 -right-5;
+      @apply hidden lg:block absolute bottom-8 -right-10;
    }
 }

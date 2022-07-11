@@ -1,5 +1,5 @@
 import s from '../../styles/info/info.module.scss'
-import Accordeon from '../UI/Accordeon'
+import Accordeons from './Accordeons'
 
 const Info = () => {
    const infoBlocks = [
@@ -26,14 +26,12 @@ const Info = () => {
    ]
    return (
       <div className={s.info}>
-         <img className={s.bag} src="/assets/img/other/bag.svg" alt="" />
-         <h2 className={s.title}>
-            Что входит в услугу по созданию дизайна интернет-магазина?
-         </h2>
-         <div className={s.accordeons}>
-            {infoBlocks.map(el => (
-               <Accordeon key={el.title} title={el.title} body={el.body} />
-            ))}
+         <div className={s.infoContainer}>
+            <img className={s.bag} src="/assets/img/other/bag.svg" alt="" />
+            <h2 className={s.title}>
+               Что входит в услугу по созданию дизайна интернет-магазина?
+            </h2>
+            <Accordeons infoBlocks={infoBlocks} />
          </div>
       </div>
    )
