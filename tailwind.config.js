@@ -8,6 +8,7 @@ module.exports = {
          ice: '#DAECFF',
          white: '#FFFFFF',
          gray: '#484848',
+         black: '#000000',
       },
       fontFamily: {
          montserrat: 'Montserrat',
