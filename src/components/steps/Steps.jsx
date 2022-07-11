@@ -1,8 +1,10 @@
 import Title from '../UI/Title'
 import s from '../../styles/steps/steps.module.scss'
-import Slider from './Slider'
+import Slider from '../UI/Slider'
+import useWindowDimensions from '../../hooks/useWindowDimentions'
 
 const Steps = () => {
+   const { width } = useWindowDimensions()
    const stepsBlocks = [
       {
          title: '1. Анализ',
@@ -30,6 +32,7 @@ const Steps = () => {
          icon: 'gear',
       },
    ]
+
    return (
       <div className={s.steps}>
          <img
@@ -37,7 +40,7 @@ const Steps = () => {
             src="/assets/img/common/white_sphere.svg"
             alt=""
          />
-         {window.innerWidth >= 1024 && (
+         {width >= 1024 && (
             <img
                className={s.bgWave}
                src="/assets/img/common/blue_wave.svg"
@@ -45,7 +48,7 @@ const Steps = () => {
             />
          )}
          <Title>Этапы разработки интернет-магазина</Title>
-         <Slider stepsBlocks={stepsBlocks} />
+         <Slider data={stepsBlocks} />
       </div>
    )
 }

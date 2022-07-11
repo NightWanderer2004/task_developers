@@ -1,7 +1,10 @@
+import useWindowDimensions from '../hooks/useWindowDimentions'
 import s from '../styles/navbar.module.scss'
 import Button from './UI/Button'
 
 const NavLinks = ({ isMenuActive, clickHandler }) => {
+   const { width } = useWindowDimensions()
+
    return (
       <ul className={`${s.navbarLinks} ${isMenuActive ? s.active : ''}`}>
          <li className={s.navbarLink} onClick={clickHandler}>
@@ -16,7 +19,7 @@ const NavLinks = ({ isMenuActive, clickHandler }) => {
          <li className={s.navbarLink} onClick={clickHandler}>
             <a href="#">Дизайнеры</a>
          </li>
-         {window.innerWidth >= 1024 ? (
+         {width >= 1024 ? (
             <li>
                <Button data-additional="navBtn" onClick={clickHandler}>
                   Заказать
