@@ -1,0 +1,13 @@
+.backdrop {
+   @apply opacity-0 text-white rounded-xl flex flex-col justify-center items-center absolute top-0 left-0 h-full w-full bg-blue transition-opacity;
+}
+.infoImage {
+   @apply relative cursor-pointer;
+   &:hover .backdrop,
+   &:active .backdrop {
+      @apply opacity-100;
+   }
+   .titleImage {
+      @apply font-extrabold uppercase lg:text-lg;
+   }
+}
