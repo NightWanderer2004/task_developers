@@ -26,6 +26,7 @@ const Info = () => {
    ]
    return (
       <div className={s.info}>
+         <img className={s.bag} src="/assets/img/other/bag.svg" alt="" />
          <h2 className={s.title}>
             Что входит в услугу по созданию дизайна интернет-магазина?
          </h2>

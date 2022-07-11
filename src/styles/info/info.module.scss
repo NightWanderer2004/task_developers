@@ -1,9 +1,12 @@
 .info {
-   @apply bg-ice px-5 py-4 md:py-12 lg:py-24;
+   @apply bg-ice px-5 py-4 md:py-12 lg:py-24 relative;
    .title {
       @apply font-extrabold text-2xl lg:text-3xl text-center leading-8;
    }
    .accordeons {
       @apply flex flex-col gap-y-2 pt-4 md:pt-10 lg:pt-20;
+   }
+   .bag {
+      @apply hidden lg:block absolute bottom-8 -right-5;
    }
 }
