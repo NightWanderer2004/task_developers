@@ -9,7 +9,7 @@
          @apply hidden lg:block relative top-96;
       }
       &:nth-child(3) {
-         @apply h-72 md:h-[300px] lg:h-[600px];
+         @apply md:h-[300px] lg:h-[600px] h-72;
       }
       &:nth-child(4) {
          @apply absolute w-14 -top-60 left-3;
