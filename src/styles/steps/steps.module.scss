@@ -1,0 +1,9 @@
+.steps {
+   @apply py-10 relative;
+   .bgSphere {
+      @apply w-10 lg:w-16 h-10 lg:h-16 absolute top-5 -left-8;
+   }
+   .bgWave {
+      @apply absolute bottom-1 -right-24;
+   }
+}

@@ -1,4 +1,5 @@
 import s from '../../styles/info/info.module.scss'
+import Title from '../UI/Title'
 import Accordeons from './Accordeons'
 
 const Info = () => {
@@ -28,9 +29,9 @@ const Info = () => {
       <div className={s.info}>
          <div className={s.infoContainer}>
             <img className={s.bag} src="/assets/img/other/bag.svg" alt="" />
-            <h2 className={s.title}>
+            <Title>
                Что входит в услугу по созданию дизайна интернет-магазина?
-            </h2>
+            </Title>
             <Accordeons infoBlocks={infoBlocks} />
          </div>
       </div>

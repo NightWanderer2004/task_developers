@@ -3,9 +3,6 @@
    &Container {
       @apply mx-auto container relative;
    }
-   .title {
-      @apply font-extrabold text-2xl lg:text-3xl text-center leading-8;
-   }
    .accordeons {
       @apply flex flex-col gap-y-2 pt-4 md:pt-10 lg:pt-20;
    }
