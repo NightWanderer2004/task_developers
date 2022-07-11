@@ -16,7 +16,11 @@ const Accordeon = ({ title, body }) => {
                <img src="/assets/icons/arrow_down.svg" alt="\_/" />
             </button>
          </div>
-         <p className={s.body} data-active={isAccordeonActive}>
+         <p
+            className={s.body}
+            data-active={isAccordeonActive}
+            onClick={e => e.stopPropagation()}
+         >
             {body}
          </p>
       </div>
