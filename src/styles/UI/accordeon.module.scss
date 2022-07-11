@@ -1,5 +1,5 @@
 .accordeon {
-   @apply bg-white rounded-lg py-4 px-6 cursor-pointer;
+   @apply bg-white rounded-lg py-4 px-6 cursor-pointer max-w-2xl lg:max-w-5xl mx-auto w-full;
    .container {
       @apply flex items-start gap-x-5;
    }
