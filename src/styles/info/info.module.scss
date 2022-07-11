@@ -1,12 +1,12 @@
 .info {
-   @apply bg-ice px-5 py-4 md:py-12 lg:py-24;
+   @apply bg-ice py-4 md:py-12 lg:py-24;
    &Container {
-      @apply mx-auto container relative;
+      @apply mx-auto container relative px-3 sm:px-5 md:px-12;
    }
    .accordeons {
       @apply flex flex-col gap-y-2 pt-4 md:pt-10 lg:pt-20;
    }
    .bag {
-      @apply hidden lg:block absolute bottom-8 -right-10;
+      @apply hidden xl:block absolute bottom-8 -right-10;
    }
 }
