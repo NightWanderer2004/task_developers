@@ -7,7 +7,7 @@ const ImageBlock = el => {
             <h3 className={s.titleImage}>Онлайн-магазин</h3>
             <p>{el.el.title}</p>
          </div>
-         <img src={`/assets/img/portfolio/${el.el.image}.png`} />
+         <img loading="lazy" src={`/assets/img/portfolio/${el.el.image}.png`} />
       </div>
    )
 }
