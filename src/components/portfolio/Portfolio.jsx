@@ -36,6 +36,22 @@ const Portfolio = () => {
    return (
       <div className={s.portfolio}>
          <div className={s.portfolioContainer}>
+            {width >= 1024 ? (
+               <>
+                  <img
+                     className={s.bgWave}
+                     src="/assets/img/common/violet_wave.svg"
+                     alt=""
+                  />
+                  <img
+                     className={s.bgSphere}
+                     src="/assets/img/common/white_sphere.svg"
+                     alt=""
+                  />
+               </>
+            ) : (
+               ''
+            )}
             <Title>Примеры онлайн-магазинов</Title>
             {width >= 1024 ? (
                <div className={s.examples}>
