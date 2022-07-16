@@ -1,7 +1,7 @@
 @import "../keyframes.scss";
 
 .infoImg {
-   @apply mx-auto absolute z-10 w-[215px] sm:w-[260px] md:max-w-none md:w-[335px] lg:w-[410px];
+   @apply mx-auto absolute z-10 w-[215px] sm:w-[260px] md:w-[335px] lg:w-[410px] md:max-w-none;
    animation: mainHover 2.2s ease-in-out infinite alternate, opacity 1s;
    &Container {
       @apply my-8 relative top-0 left-0 md:left-20 order-1 sm:order-2 flex items-center justify-center md:justify-end;
