@@ -1,0 +1,39 @@
+@import "../keyframes.scss";
+
+.infoImg {
+   @apply mx-auto absolute z-10 w-[215px] sm:w-[260px] md:max-w-none md:w-[335px] lg:w-[410px];
+   animation: mainHover 2.2s ease-in-out infinite alternate, opacity 1s;
+   &Container {
+      @apply my-8 relative top-0 left-0 md:left-20 order-1 sm:order-2 flex items-center justify-center md:justify-end;
+   }
+   &Particles {
+      @apply relative right-8 md:right-1/4;
+   }
+}
+[data-positionimg] {
+   @apply relative;
+}
+[data-positionimg="1"] {
+   @apply w-3 md:w-6 h-3 md:h-6 top-2 md:top-0 lg:-top-4 left-44 md:left-36;
+   animation: upHover 2s ease-in-out infinite alternate, opacity 1s;
+}
+[data-positionimg="2"] {
+   @apply w-5 md:w-10 h-5 md:h-10 -top-1 md:-top-5 lg:-top-10 left-48 md:left-44 lg:left-48;
+   animation: downHover 2s ease-in-out infinite alternate, opacity 1s;
+}
+[data-positionimg="3"] {
+   @apply z-20 w-12 md:w-24 h-12 md:h-24 top-2 md:-top-8 left-8 md:-left-28 lg:-left-44;
+   animation: upHover 2s ease-in-out infinite alternate, opacity 1s;
+}
+[data-positionimg="4"] {
+   @apply z-20 w-16 md:w-28 lg:w-32 h-8 md:h-20 lg:h-24 top-20 -left-8 md:-left-44 lg:-left-64;
+   animation: downHover 2s ease-in-out infinite alternate, opacity 1s;
+}
+[data-positionimg="5"] {
+   @apply z-20 top-12 md:-top-1 lg:top-10 left-5 md:left-10 lg:-left-14;
+   animation: downHover 2s ease-in-out infinite alternate, opacity 1s;
+}
+[data-positionimg="6"] {
+   @apply w-6 md:w-16 h-7 md:h-16 bottom-10 md:bottom-40 left-44 md:left-40 lg:left-36;
+   animation: upHover 2s ease-in-out infinite alternate, opacity 1s;
+}
