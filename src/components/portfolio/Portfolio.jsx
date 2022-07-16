@@ -53,7 +53,7 @@ const Portfolio = () => {
                ''
             )}
             <Title>Примеры онлайн-магазинов</Title>
-            {width >= 1024 ? (
+            {width >= 768 ? (
                <div className={s.examples}>
                   {portfolioImages.map(el => (
                      <ImageBlock key={el.image} el={el} />
