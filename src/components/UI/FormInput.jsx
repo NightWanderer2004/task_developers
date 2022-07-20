@@ -1,7 +1,6 @@
 import s from '../../styles/UI/formInput.module.scss'
 
 const FormInput = props => {
-   console.log(props.errors)
    return (
       <div className={s.inuptGroup}>
          <input
