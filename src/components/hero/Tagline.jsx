@@ -12,7 +12,9 @@ const Tagline = () => {
             кабинета - от фирменного стиля до пользовательского интерфейса в
             сжатые сроки с командой Virtual Designers
          </p>
-         <Button>Заказать</Button>
+         <a href="#contact">
+            <Button>Заказать</Button>
+         </a>
       </div>
    )
 }
