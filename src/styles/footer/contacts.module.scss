@@ -1,0 +1,6 @@
+.contacts {
+   @apply flex flex-col gap-y-3 mb-14 mt-6 md:m-0;
+   .person {
+      @apply flex items-center gap-x-2 text-white;
+   }
+}

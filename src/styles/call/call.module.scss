@@ -1,0 +1,21 @@
+.call {
+   @apply bg-ice py-8 md:py-14 lg:py-28 px-3 sm:px-5 md:px-12;
+   &Container {
+      @apply container mx-auto relative;
+   }
+   .infoText {
+      @apply leading-7 my-7 sm:my-10 sm:text-lg text-center max-w-md mx-auto;
+   }
+   .form {
+      @apply flex flex-col gap-y-5 items-center;
+   }
+   .img {
+      @apply mt-10 mx-auto md:absolute top-20 left-0 w-52 md:w-44 lg:w-64;
+      &Wave {
+         @apply absolute top-36 right-0 -rotate-6;
+      }
+      &Sphere {
+         @apply absolute top-48 right-3 w-16;
+      }
+   }
+}
