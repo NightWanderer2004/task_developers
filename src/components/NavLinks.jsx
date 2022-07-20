@@ -8,22 +8,24 @@ const NavLinks = ({ isMenuActive, clickHandler }) => {
    return (
       <ul className={`${s.navbarLinks} ${isMenuActive ? s.active : ''}`}>
          <li className={s.navbarLink} onClick={clickHandler}>
-            <a href="#">Услуги</a>
+            <a href="#info">Услуги</a>
          </li>
          <li className={s.navbarLink} onClick={clickHandler}>
-            <a href="#">Портфолио</a>
+            <a href="#portfolio">Портфолио</a>
          </li>
          <li className={s.navbarLink} onClick={clickHandler}>
-            <a href="#">Этапы</a>
+            <a href="#steps">Этапы</a>
          </li>
          <li className={s.navbarLink} onClick={clickHandler}>
-            <a href="#">Дизайнеры</a>
+            <a href="#portfolio">Дизайнеры</a>
          </li>
          {width >= 1024 ? (
             <li>
-               <Button data-additional="navBtn" onClick={clickHandler}>
-                  Заказать
-               </Button>
+               <a href="#contact">
+                  <Button data-additional="navBtn" onClick={clickHandler}>
+                     Заказать
+                  </Button>
+               </a>
             </li>
          ) : (
             ''
