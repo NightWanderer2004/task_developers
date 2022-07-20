@@ -5,6 +5,8 @@ import Steps from './components/steps/Steps'
 import Portfolio from './components/portfolio/Portfolio'
 import s from './styles/app.module.scss'
 import MoreInfo from './components/moreInfo/MoreInfo'
+import Call from './components/call/Call'
+import Footer from './components/footer/Footer'
 
 const App = () => {
    return (
@@ -21,6 +23,8 @@ const App = () => {
          <div className={s.main}>
             <MoreInfo />
          </div>
+         <Call />
+         <Footer />
       </div>
    )
 }
