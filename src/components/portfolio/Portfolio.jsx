@@ -34,9 +34,9 @@ const Portfolio = () => {
    ]
 
    return (
-      <div className={s.portfolio}>
+      <div className={s.portfolio} id="portfolio">
          <div className={s.portfolioContainer}>
-            {width >= 1024 ? (
+            {width >= 1024 && (
                <>
                   <img
                      className={s.bgWave}
@@ -49,8 +49,6 @@ const Portfolio = () => {
                      alt=""
                   />
                </>
-            ) : (
-               ''
             )}
             <Title>Примеры онлайн-магазинов</Title>
             {width >= 768 ? (

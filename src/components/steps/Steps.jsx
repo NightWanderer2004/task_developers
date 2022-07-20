@@ -34,7 +34,7 @@ const Steps = () => {
    ]
 
    return (
-      <div className={s.steps}>
+      <div className={s.steps} id="steps">
          <img
             className={s.bgSphere}
             src="/assets/img/common/white_sphere.svg"

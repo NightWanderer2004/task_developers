@@ -26,7 +26,7 @@ const Info = () => {
       },
    ]
    return (
-      <div className={s.info}>
+      <div className={s.info} id="info">
          <div className={s.infoContainer}>
             <img className={s.bag} src="/assets/img/other/bag.svg" alt="" />
             <Title>
