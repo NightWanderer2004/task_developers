@@ -1,15 +1,15 @@
 .footer {
    @apply bg-blue p-11;
    &Container {
-      @apply container mx-auto md:mb-20 md:flex justify-between items-center;
+      @apply container mx-auto lg:mb-20 lg:flex justify-between items-center;
    }
    .logo {
       @apply max-w-[280px] w-full;
    }
    .email {
-      @apply block text-white text-center mt-10 md:m-0;
+      @apply block text-white text-center mt-10 lg:m-0;
    }
    .cpr {
-      @apply text-white mt-5 text-center md:m-0;
+      @apply text-white mt-5 text-center lg:m-0;
    }
 }
